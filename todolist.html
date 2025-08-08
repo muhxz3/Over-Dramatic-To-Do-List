@@ -18,6 +18,40 @@
             color: gold;
             text-shadow: 2px 2px 5px black;
         }
+        h3 {
+            color: gold;
+            margin: 15px 0 10px 0;
+        }
+        .add-song, .songs-list {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .add-song input[type="file"] {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .add-song input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: none;
+        }
+        .song-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px;
+            background-color: rgba(255, 255, 255, 0.05);
+            margin-bottom: 5px;
+            border-radius: 4px;
+        }
+        .song-item .keywords {
+            color: #ffd700;
+            font-size: 0.9em;
+        }
         .add-task {
             display: flex;
             gap: 10px;
@@ -65,10 +99,25 @@
 </head>
 <body>
     <h1>🎭 OverDramatic To-Do List 🎭</h1>
+    
+    <div class="add-song">
+        <h3>Add New Song</h3>
+        <input type="file" id="songUpload" accept="audio/*">
+        <input type="text" id="songKeywords" placeholder="Enter keywords (comma separated)...">
+        <button onclick="addNewSong()">Add Song</button>
+    </div>
+
+    <div class="songs-list">
+        <h3>Current Songs</h3>
+        <ul id="songsList"></ul>
+    </div>
+
     <div class="add-task">
+        <h3>Add Task</h3>
         <input type="text" id="newTask" placeholder="Add a new task...">
         <button onclick="addTask()">Add Task</button>
     </div>
+    
     <ul id="todoList"></ul>
 
     <script src="script.js"></script>
