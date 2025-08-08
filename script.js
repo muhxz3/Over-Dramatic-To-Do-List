@@ -1,6 +1,6 @@
 // Define the songs and their associated keywords
 const songCategories = [
-    { keywords: ['wake', 'morning', 'early'], song: 'song1.mpeg' },
+    { keywords: ['wake', 'wake up', 'morning routine', 'get up'], song: 'song1.mpeg' },
     { keywords: ['bed', 'make bed'], song: 'song2.mpeg' },
     { keywords: ['brush', 'teeth', 'dental'], song: 'song3.mpeg' },
     { keywords: ['breakfast', 'food', 'eat', 'meal', 'lunch', 'dinner'], song: 'song4.mpeg' },
@@ -9,7 +9,7 @@ const songCategories = [
     { keywords: ['wash', 'laundry', 'clothes'], song: 'song7.mp4' },
     { keywords: ['cook', 'cooking', 'prepare food'], song: 'song8.mp4' },
     { keywords: ['clean', 'cleaning', 'organize'], song: 'song9.mpeg' },
-    { keywords: ['sleep', 'night', 'bed time'], song: 'song10.mpeg' }
+    { keywords: ['sleep', 'night', 'bedtime', 'go to bed'], song: 'song10.mpeg' }
 ];
 
 // Audio player instance
